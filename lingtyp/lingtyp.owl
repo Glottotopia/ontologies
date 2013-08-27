@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" > 
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY frbr "http://purl.org/vocab/frbr/core#" >     
+]>
+
+
+<rdf:RDF xmlns="http://www.galoes.org/ontologies/lingtyp.owl#"
+     xml:base="http://www.galoes.org/ontologies/lingtyp.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"  
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"      
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:lingtyp2="http://www.galoes.org/ontologies/lingtyp.owl#81">
+    <owl:Ontology rdf:about="http://www.galoes.org/ontologies/lingtyp.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#LexicalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#LexicalProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribableProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribableProperty">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#TypologicalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#TypologicalProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribableProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty">
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#belongsTo">
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Dimitron"/>
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Lectoid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasComment -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasComment">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Comment"/>
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasConfidenceLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasConfidenceLevel">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasDoculect -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasDoculect">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Doculect"/>
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Lectodoc"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasGrammaticality -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasGrammaticality">
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LanguageSnippet"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasIncidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasIncidence">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Incidence"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasLectodoc -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasLectodoc">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Lectodoc"/>
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Lectoid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasReference -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasReference">
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasSublect -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasSublect">
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Hyperlect"/>
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Hyperlect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#hasValue">
+        <rdfs:domain rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Value"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#illustratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#illustratedBy">
+        <rdfs:range rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LanguageSnippet"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#annotationProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#source -->
+
+    <owl:ObjectProperty rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Comment -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Comment">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Datapoint -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Dimitron -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Dimitron">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Doculect -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Doculect">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Hyperlect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#GrammaticalityJudgment -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#GrammaticalityJudgment"/>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Hyperlect -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Hyperlect">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Lectoid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Incidence -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Incidence">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#LanguageSnippet -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#LanguageSnippet">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable"/>
+        <rdfs:subClassOf rdf:resource="&frbr;manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Lectodoc -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Lectodoc">
+        <rdfs:subClassOf rdf:resource="&frbr;manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Lectoid -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Lectoid">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable"/>
+        <rdfs:subClassOf rdf:resource="&dcterms;linguisticSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#LinguisticDescribable"/>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Reference -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#Value -->
+
+    <owl:Class rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#Value">
+        <rdfs:subClassOf rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#DatapointAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#dcterms:linguisticSystem -->
+
+    <owl:Class rdf:about="&dcterms;linguisticSystem"/>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#frbr:manifestation -->
+
+    <owl:Class rdf:about="&frbr;manifestation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+     
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp11">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp2">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#asjp-jpn-asjp3">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#frequent -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#frequent">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Incidence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#grammatical -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#grammatical">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#GrammaticalityJudgment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#high -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#high">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#ids-jpn-ids1.250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#ids-jpn-ids1.250">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#low -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#low">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#medium">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#ConfidenceLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#rare -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#rare">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Incidence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#ubiquitous -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#ubiquitous">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Incidence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#ungrammatical -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#ungrammatical">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#GrammaticalityJudgment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#wals-81a-jpn -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#wals-81a-jpn">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+        <owl:sameAs rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#wals-jpn-81a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#wals-jpn-81a -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#wals-jpn-81a">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#wals-tur-81a -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#wals-tur-81a"/>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#wold-jpn-wold3.32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.galoes.org/ontologies/lingtyp.owl#wold-jpn-wold3.32">
+        <rdf:type rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl#Datapoint"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,3777 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://galoes.org/ontologies/occult.owl#"
+     xml:base="http://galoes.org/ontologies/occult.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     
+    <owl:Ontology rdf:about="http://galoes.org/ontologies/occult.owl"/>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Phonology">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Expressive_system"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#rules,_constraints">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phonology"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#segments">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phonology"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#consonants">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#segments"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#prominence/accent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phonology"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#stress">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#prominence/accent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#tone">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#prominence/accent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Graphemology">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Expressive_system"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Semantic_richness">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#semantically_poorer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semantic_richness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#semantically_not_evaluable">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semantic_richness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#semantically_richer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semantic_richness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#semantically_equally_rich">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semantic_richness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Adjacency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-adjacent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Adjacency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#adjacent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Adjacency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Prototypicality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#prototypical">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Prototypicality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#marginal/peripheral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Prototypicality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Order">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#following">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#precedence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#simullocation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Salience">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity_relations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#less">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantity_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantity_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#indeterminate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantity_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Existence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#presence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Scope">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#are_within_the_scope_of_the_same_element">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Scope"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#has_scope_over">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Scope"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#is_within_scope_of">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Scope"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Diachrony">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#evolves_from">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Diachrony"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unclear">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Diachrony"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#evolves_into">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Diachrony"/>
+    </owl:Class>
+
+<!--    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Class">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#is_not_member">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Class"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#is_member">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Class"/>
+    </owl:Class>-->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Identity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Metaconcepts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#different">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Identity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#same">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Identity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#semasiological">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semiotic_system"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Suprasegmental">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#semasiological"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_tone">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Suprasegmental"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#intonation_contours">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Suprasegmental"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Segmental">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#semasiological"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Segmental"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#complex">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Idioms">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#complex"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Phraseology">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#complex"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_morphemes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#bound">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#grammatical_morphemes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#discontinuous">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#bound"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumfixes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#discontinuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#continuous">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#bound"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#prefixes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#infixes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#suffixes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#free">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#grammatical_morphemes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#discontinuous">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#free"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumposed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#discontinuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#continuous">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#free"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#postposed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#preposed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inposed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#continuous"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lexical_morphemes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#bound">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#lexical_morphemes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#free">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#lexical_morphemes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#free"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Schematic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Segmental"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Schematic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_clause_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dependent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_clause_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#independent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_clause_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Coordination_within_clauses">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_clause_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#asyndetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination_within_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#syndetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination_within_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_paragraph_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#without_clausal_repetition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_paragraph_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#with_clausal_repetition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_paragraph_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_word_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_1_stem">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_word_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_follows">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_inside_a_stem">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_precedes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_on_both_sides">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more_than_1_stem">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_word_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_in_several_locations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_no_grammatical_material">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_precedes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_between_stems">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_follows">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#grammatical_material_inside_one_stem">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_1_stem"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_no_stem">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_word_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_phrase_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_phrases">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_phrase_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Coordination_within_phrases">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_phrase_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#asyndetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination_within_phrases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#syndetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination_within_phrases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_lexeme_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-atomic_sentence_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_only_independent_clauses">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_sentence_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_only_dependent_clauses">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_sentence_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#comprising_both_independent_and_dependent_clauses">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-atomic_sentence_classes"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dependent_clause_precedes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_both_independent_and_dependent_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dependent_clause_follows">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_both_independent_and_dependent_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dependent_clause_intervenes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_both_independent_and_dependent_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dependent_clause_surrounds">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#comprising_both_independent_and_dependent_clauses"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Schematic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_phrase_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_paragraph_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_lexeme_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_clause_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_sentence_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#atomic_word_classes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#atomic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#onomasiological">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Semiotic_system"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#propositional">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#onomasiological"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#alienable">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Possession"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#permanent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#alienable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#permanent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#possessive_predicate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inanimate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#permanent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#possessive_predicate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#temporary">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#alienable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#temporary"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#possessive_predicate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inanimate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#temporary"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#possessive_predicate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#alienable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inalienable">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Possession"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inalienable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#animate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inanimate">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inalienable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#attributive_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#predicative_possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#inanimate"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Comparison">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Superlative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Comparison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Equation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Comparison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Correlative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Comparison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Correlated_properties">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Correlative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Correlated_situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Correlative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Superiority">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Comparison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Inferiority">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Comparison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Space">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#stative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#citerior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ulterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#deictic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more_than_two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#deictic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#medial">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-deic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-deic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more_than_two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-deic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#citerior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ulterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#medial">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#more_than_two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dynamic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#deic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#dynamic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#deic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#src">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#goal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#traj">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#three_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#deic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more_than_three_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#deic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#dynamic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#two_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-deictic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#src">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#src"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#goal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#goal"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#traj">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#two_entities_involved"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#superior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lateral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#general">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#posterior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#circumferential">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#inferior">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#traj"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#three_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-deictic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#more_than_three_entities_involved">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-deictic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#division_of_space">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#visibility_of_space">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#division_of_space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#invisible">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#visibility_of_space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#visible">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#visibility_of_space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#speech-act_participants">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#division_of_space"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#speaker+hearer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#speech-act_participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#hearer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#speech-act_participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#speaker">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#speech-act_participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#States">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Status_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#States"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#States"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Property_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#States"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Identity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#States"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#States"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Events">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#achievements">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Events"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#activities">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Events"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#accomplishments">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Events"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participants">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Patient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Force">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Set_domain">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Source">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Theme">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Proprietive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Caritive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_utterance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#theme">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_utterance"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_measures">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Value">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Duration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Spatial_extension">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Portion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Means">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Purpose">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Temporal_domain">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Concession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#patient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Set_domain">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Circumstance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Addition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Unreal_circumstance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#theme">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Negative_circumstance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Condition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Concession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#patient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Addition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Condition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Purpose">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reason">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#theme">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Concessive_Condition">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_propositions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Experiencer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Beneficiary">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Goal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Set_domain">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Instrument">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Theme">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Comitative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Proprietive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Patient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Source_link_to_space">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Caritive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Cause">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Path">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Role">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Agent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Recipient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participant_roles_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Individuals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Utterances">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dynamic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#telic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#dynamic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#punctual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#telic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#punctual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#punctual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-punctual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#telic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-punctual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-punctual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-telic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#dynamic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-telic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-telic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#stative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-controlled">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#stative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Minor_types">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Minor_types"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#reason">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Minor_types"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Minor_types"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Minor_types"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#measure">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Minor_types"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Properties">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants_of_different_entity_orders"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Coreference">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Self-benefactive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coreference"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reciprocals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coreference"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reflexive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coreference"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Changing_the_number_of_participants">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#increasing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Changing_the_number_of_participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#causation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#increasing"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#permission">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#increasing"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#decreasing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Changing_the_number_of_participants"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Person">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#excluding_speaker">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Person"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#including_addressee">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_speaker"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#plural">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#singular">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#excluding_addressee">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_speaker"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#plural">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#singular">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#including_speaker">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Person"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#including_addressee">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_speaker"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#plural">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#excluding_addressee">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#including_speaker"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#plural">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#singular">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#excluding_addressee"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_measures">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Denumerable_quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#0">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#1">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#2">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#3">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#4">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#6">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#10">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#12">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#144">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#50">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#20">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#100">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#60">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Indefinite_quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_measures"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#no_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_manner"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#all_manners">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_manner"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Spatial_quantification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Temporal_quantification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Duration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Temporal_quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#average">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Duration"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#short">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Duration"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Duration"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unspecified">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Duration"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Habituality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Temporal_quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Temporal_quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#high_frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Frequency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#always">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Frequency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#average_frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Frequency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#never">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Frequency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#low_frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Frequency"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Iterativity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Temporal_quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#all_points_in_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#no_points_in_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_locations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#all_locations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_locations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#no_locations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_locations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#plurality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#collectivity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#singularity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#genericity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#order">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Indefinite_order">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#low_rank">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#average_rank">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#high_rank">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Denumerable_order">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#0">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#1">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#2">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#3">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#4">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#second_to_last">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#last">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#third_to_last">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_order"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Quantification_of_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Denumerable_quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#0">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#1">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#2">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#3">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#4">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Denumerable_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Indefinite_quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unclear_proportion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#low_proportion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#high_proportion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#totality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#average_proportion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Indefinite_quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Polarity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#individual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#existence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-existing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#existing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#presence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#presence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#present">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#presence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#pseudo">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#differently">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Manner"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#anderswann">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Situation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#pseudo">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#positive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#still">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#positive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#already">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#positive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#neutral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#positive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#negative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#not_yet">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#negative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#no_longer">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#negative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#neutral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#negative"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#presence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#presence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#present">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#presence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#existence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-existing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#existing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#pseudo">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#litotes">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#lack_of_property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Affirmation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Propositional_content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Denial">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Propositional_content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Polarity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#elsewhere">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Location"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality_and_Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality_and_Evidentiality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidential_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Evidentiality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#reportative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Evidential_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situation-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Evidential_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#proposition-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Evidential_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality_and_Evidentiality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Volitive_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situation-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Volitive_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#participant-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Volitive_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#proposition-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Volitive_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deontic_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situation-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Deontic_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#participant-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Deontic_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Epistemic_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situation-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Epistemic_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#proposition-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Epistemic_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#universal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#proposition-oriented"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#doxastic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#proposition-oriented"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#hypothetical">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#proposition-oriented"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dubitative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#proposition-oriented"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frustrative_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Facultative_modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situation-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Facultative_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#participant-oriented">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Facultative_modality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#external_temporal_constitution">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absolute-relative_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#external_temporal_constitution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#relative_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#external_temporal_constitution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#implicit_ground">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#relative_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Simultaneous_to_reference_point">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Before_reference_point">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_before">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_reference_point"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#just_before">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_reference_point"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#After_reference_point">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#just_after">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_reference_point"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_after">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_reference_point"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#explicit_ground">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#relative_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unbounded">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ground_is_terminal_boundary">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_later_than_ground">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unbounded">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_later_than_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ground_is_initial_boundary">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_later_than_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Partial_coincidence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Full_coincidence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Overlap">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Point_coincidence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absolute_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#external_temporal_constitution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#After_speech_act">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#later_today">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#imminent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#remote">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#tomorrow">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Simultaneous_to_speech_act">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Before_speech_act">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#before_yesterday">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#earlier_today">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#recently">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#yesterday">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_ago">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Internal_temporal_constitution">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Phases">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Internal_temporal_constitution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Continuation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Beginning">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-sudden">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Beginning"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sudden">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Beginning"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#End">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-sudden">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#End"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sudden">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#End"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Progression">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Phases"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Perfectivity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Internal_temporal_constitution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#perfective">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Perfectivity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#imperfective">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Perfectivity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_Quantity"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#insufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#abundant">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_manner"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#insufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#abundant">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_Time"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_Reasons">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_Reasons"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Polarity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_propositional_content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_propositional_content"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_properties">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_properties"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#insufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sufficient">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#abundant">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Degree"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_situations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Polarity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_Location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_Location"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modifying_individuals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Restriction_and_characterization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Types_of_modifiers">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modifying_individuals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Degree">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Localization">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-deictic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Localization"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Reality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Intensity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Frequency">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#situations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Evidentiality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Association">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Possession">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Meronymy">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Association"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Quantity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Types_of_modifiers"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Coordination">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#propositional"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#AND">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#XOR">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#OR">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#NOR">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#BUT">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Coordination"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Discourse">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#onomasiological"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Referents">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Discourse"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Importance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referents"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-unimportant_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Importance"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unimportant_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Importance"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Modification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referents"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#poor_fellow">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Referential_state">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referents"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#identifiable">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referential_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-specific">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#identifiable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#specific">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#identifiable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#queried">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referential_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#with_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#queried"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#without_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#queried"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_measure">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#neutral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#duration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_reason">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_individual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#object">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#human">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_situation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_purpose">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_utterances">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-identifiable">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referential_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#specific">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-identifiable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#with_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#specific"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#without_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#specific"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_measure">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#neutral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#duration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_reason">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_individual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#object">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#human">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_situation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_purpose">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_utterances">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-specific">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-identifiable"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#with_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-specific"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#without_specified_referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-specific"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_propositional_content">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_measure">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#neutral">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#duration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_measure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_reason">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_individual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#object">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#human">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#animal">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_situation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_purpose">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#referring_to_situation"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_utterances">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_manner">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referring_to_property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#without_specified_referent"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Activation_state">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Referents"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Inactive_referents">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Activation_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Active_referents">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Activation_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Unactivated_referents">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Activation_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Accessible_referents">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Activation_state"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Discourse"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#modification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#allegedly_defamatory">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#fortunately_slim">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#really_nice">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#modification"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#object_of_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#individual">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#class-inclusion">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#class-membership">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#identity">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#individual"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#location">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#time">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#existence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#positive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#negative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#existence"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#property">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#status_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#property_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#property"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dynamic_property_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#property_assignment"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-dynamic_property_assignment">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#property_assignment"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#object_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#types_of_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#non-straightforward_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#types_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#sloppy_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-straightforward_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#exact_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#non-straightforward_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#straightforward_ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#types_of_ascription"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Information_structure">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Discourse"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Topicality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Information_structure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Contrastive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Topicality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Resumed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#New">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Given">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-contrastive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Topicality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Resumed">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Non-contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#New">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Non-contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Given">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Non-contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Focality">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Information_structure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Contrastive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Focality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#thetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#categorical">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#broad">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#categorical"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#narrow">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#categorical"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#narrow"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#narrow"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Non-contrastive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Focality"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#thetic">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Non-contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#categorical">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Non-contrastive"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#broad">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#categorical"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#narrow">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#categorical"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#referent">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#narrow"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ascription">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#narrow"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Cancelling_implicatures">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Information_structure"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Pragmatics">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#onomasiological"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Politeness">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Pragmatics"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Being_polite">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Politeness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Being_impolite">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Politeness"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#mitigation_and_reinforcement">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Pragmatics"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#mitigation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#mitigation_and_reinforcement"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#reinforcement">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#mitigation_and_reinforcement"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Rhetorical_relations">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Pragmatics"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#elaboration">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#justification">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#consequence">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#explanation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#correction">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Rhetorical_relations"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#speech_acts">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Pragmatics"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#illocution">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#speech_acts"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#imprecative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#mirative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dishortative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#admonitive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#prohibitive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#supplicative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#interrogative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#imperative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#commissive">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#declarative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#hortative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#optative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#vocative">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#illocution"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Conversational_goals">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Pragmatics"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Requesting_information">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Requesting_action">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Thanking">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Other">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Promising">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Taking_leave">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Requesting_confirmation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Explaining">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Telling_your_age">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Declining_a_favour">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Granting_permission">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Granting_a_favour">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Wishing">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Answering">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Asking_a_favour">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Expressing_annoyance">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Requesting_permission">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Showing_hesitation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Introducing_yourself">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Ending_a_conversation">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Providing_information">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Greeting_people">
+	    <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Conversational_goals"/>
+    </owl:Class>
+</rdf:RDF>
