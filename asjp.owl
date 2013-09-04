@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY lemon "http://www.monnet-project.eu/lemon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY frbr "http://purl.org/vocab/frbr/core#" > 
+    <!ENTITY ASJP "http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#" >
+    <!ENTITY lingtyp "http://www.galoes.org/ontologies/lingtyp.owl#" >
+    <!ENTITY glottolog "http://glottolog.org/ontologies/glottolog.owl#" >
+    <!ENTITY lingtyp-full "http://www.galoes.org/ontologies/lingtyp-full.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#"
+     xml:base="http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms "http://purl.org/dc/terms/"  
+     xmlns:frbr "http://purl.org/vocab/frbr/core#"  
+     xmlns:lingtyp="http://www.galoes.org/ontologies/lingtyp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:lingtyp-full="http://www.galoes.org/ontologies/lingtyp-full.owl#"
+     xmlns:glottolog="http://glottolog.org/ontologies/glottolog.owl#"
+     xmlns:ASJP="http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#"
+     xmlns:lemon="http://www.monnet-project.eu/lemon#">
+    <owl:Ontology rdf:about="http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl">
+        <owl:imports rdf:resource="http://glottolog.org/ontologies/glottolog.owl"/>
+        <owl:imports rdf:resource="http://www.monnet-project.eu/lemon"/>
+        <owl:imports rdf:resource="http://www.galoes.org/ontologies/lingtyp.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&ASJP;genealogypath">
+        <rdfs:comment>all nodes of the genealogical tree between root and this node, separated by a semicolon</rdfs:comment>
+        <rdfs:domain rdf:resource="&glottolog;Languoid"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp.owl#LexicalProperty -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp;LexicalProperty"/>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#ASJPProperty -->
+
+    <owl:ObjectProperty rdf:about="&ASJP;ASJPProperty">
+        <rdfs:subPropertyOf rdf:resource="&lingtyp;LexicalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+ 
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#genealogypath -->
+
+    <owl:ObjectProperty rdf:about="&ASJP;genealogypath">
+        <rdfs:comment>all nodes of the genealogical tree between root and this node, separated by a semicolon</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#hasComputedDistance -->
+
+    <owl:ObjectProperty rdf:about="&ASJP;hasComputedDistance">
+        <rdfs:comment>The distance the ASJP algorithm yields for a pair of languages</rdfs:comment>
+        <rdfs:domain rdf:resource="&ASJP;Distance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#partakesInDistance -->
+
+    <owl:ObjectProperty rdf:about="&ASJP;partakesInDistance">
+        <rdfs:comment>Distance is a ternary relation with two entities A, B, and a distance value. To model this, we create a resource called &#39;Distance&#39;. partakesInDistance assigns A language to such a resource</rdfs:comment>
+        <rdfs:domain rdf:resource="&glottolog;Doculect"/>
+        <rdfs:range rdf:resource="&ASJP;Distance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-100 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-100">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-11 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-11">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-12 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-12">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-18 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-18">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-19 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-19">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-2 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-2">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-21 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-21">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-22 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-22">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-23 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-23">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-25 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-25">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-28 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-28">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-3 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-3">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-30 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-30">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-31 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-31">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-34 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-34">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-39 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-39">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-40 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-40">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-41 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-41">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-43 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-43">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-44 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-44">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-47 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-47">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-48 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-48">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-51 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-51">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-53 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-53">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-54 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-54">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-57 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-57">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-58 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-58">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-61 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-61">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-66 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-66">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-72 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-72">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-74 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-74">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-75 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-75">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-77 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-77">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-82 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-82">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-85 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-85">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-86 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-86">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-92 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-92">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-95 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-95">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.galoes.org/ontologies/lingtyp-full.owl#ASJP-96 -->
+
+    <owl:ObjectProperty rdf:about="&lingtyp-full;ASJP-96">
+        <rdfs:comment>The translation of the word &#39;xxx&#39;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&ASJP;ASJPProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#asjpstring -->
+
+    <owl:DatatypeProperty rdf:about="&ASJP;asjpstring">
+        <rdfs:subPropertyOf rdf:resource="&lemon;writtenRep"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://glottolog.org/ontologies/glottolog.owl#Doculect -->
+
+    <owl:Class rdf:about="&glottolog;Doculect"/>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#Distance -->
+
+    <owl:Class rdf:about="&ASJP;Distance"/>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#Language1 -->
+
+    <owl:Class rdf:about="&ASJP;Language1">
+        <rdfs:subClassOf rdf:resource="&glottolog;Doculect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl#Language2 -->
+
+    <owl:Class rdf:about="&ASJP;Language2">
+        <rdfs:subClassOf rdf:resource="&glottolog;Doculect"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
