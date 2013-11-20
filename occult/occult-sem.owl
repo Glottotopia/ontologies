@@ -1,0 +1,349 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://galoes.org/ontologies/occult.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://galoes.org/ontologies/occult.owl> .
+
+<http://galoes.org/ontologies/occult.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://galoes.org/ontologies/occult.owl#AroundAttacher
+
+:AroundAttacher rdf:type owl:Class ;
+                
+                rdfs:subClassOf :DependentItem .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#AtomicConstruction
+
+:AtomicConstruction rdf:type owl:Class ;
+                    
+                    rdfs:subClassOf :SegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ClauseClass
+
+:ClauseClass rdf:type owl:Class ;
+             
+             rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ClauseLevelConstruction
+
+:ClauseLevelConstruction rdf:type owl:Class ;
+                         
+                         rdfs:subClassOf :NonAtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#Collocation
+
+:Collocation rdf:type owl:Class ;
+             
+             rdfs:subClassOf :ContentConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#Construction
+
+:Construction rdf:type owl:Class ;
+              
+              rdfs:subClassOf owl:Thing .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ContentConstruction
+
+:ContentConstruction rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf :SegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#DependentItem
+
+:DependentItem rdf:type owl:Class ;
+               
+               rdfs:subClassOf owl:Thing .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#FreeAttacher
+
+:FreeAttacher rdf:type owl:Class ;
+              
+              rdfs:subClassOf :DependentItem .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#GrammaticalItem
+
+:GrammaticalItem rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :AtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#Holophrase
+
+:Holophrase rdf:type owl:Class ;
+            
+            rdfs:subClassOf :ContentConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#HypotacticSentenceLevelConstruction
+
+:HypotacticSentenceLevelConstruction rdf:type owl:Class ;
+                                     
+                                     rdfs:subClassOf :SentenceLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#HyptotacticSentenceLevelConstructionComprisingOnlyDependentClauses
+
+:HyptotacticSentenceLevelConstructionComprisingOnlyDependentClauses rdf:type owl:Class ;
+                                                                    
+                                                                    rdfs:subClassOf :HypotacticSentenceLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#Idiom
+
+:Idiom rdf:type owl:Class ;
+       
+       rdfs:subClassOf :ContentConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#IndependentItem
+
+:IndependentItem rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf owl:Thing .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#InsideAttacher
+
+:InsideAttacher rdf:type owl:Class ;
+                
+                rdfs:subClassOf :DependentItem .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#IntonationConstruction
+
+:IntonationConstruction rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf :SuprasegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ItemClass
+
+:ItemClass rdf:type owl:Class ;
+           
+           rdfs:subClassOf :SchematicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#LeftAttacher
+
+:LeftAttacher rdf:type owl:Class ;
+              
+              rdfs:subClassOf :DependentItem .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#Lexeme
+
+:Lexeme rdf:type owl:Class ;
+        
+        rdfs:subClassOf :ContentConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#LexemeClass
+
+:LexemeClass rdf:type owl:Class ;
+             
+             rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#LexicalItem
+
+:LexicalItem rdf:type owl:Class ;
+             
+             rdfs:subClassOf :AtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#NStemWordLevelConstruction
+
+:NStemWordLevelConstruction rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :WordLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#NonAtomicConstruction
+
+:NonAtomicConstruction rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :SegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#OneStemWordLevelConstruction
+
+:OneStemWordLevelConstruction rdf:type owl:Class ;
+                              
+                              rdfs:subClassOf :WordLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ParagraphClass
+
+:ParagraphClass rdf:type owl:Class ;
+                
+                rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ParagraphLevelConstruction
+
+:ParagraphLevelConstruction rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :NonAtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ParatacticSentenceLevelConstruction
+
+:ParatacticSentenceLevelConstruction rdf:type owl:Class ;
+                                     
+                                     rdfs:subClassOf :SentenceLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#PhraseClass
+
+:PhraseClass rdf:type owl:Class ;
+             
+             rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#PhraseLevelConstruction
+
+:PhraseLevelConstruction rdf:type owl:Class ;
+                         
+                         rdfs:subClassOf :NonAtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#RightAttacher
+
+:RightAttacher rdf:type owl:Class ;
+               
+               rdfs:subClassOf :DependentItem .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#SchematicConstruction
+
+:SchematicConstruction rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :SegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#SegmentalConstruction
+
+:SegmentalConstruction rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :Construction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#SentenceClass
+
+:SentenceClass rdf:type owl:Class ;
+               
+               rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#SentenceLevelConstruction
+
+:SentenceLevelConstruction rdf:type owl:Class ;
+                           
+                           rdfs:subClassOf :NonAtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#SuprasegmentalConstruction
+
+:SuprasegmentalConstruction rdf:type owl:Class ;
+                            
+                            rdfs:subClassOf :Construction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#ToneConstruction
+
+:ToneConstruction rdf:type owl:Class ;
+                  
+                  rdfs:subClassOf :SuprasegmentalConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#WordClass
+
+:WordClass rdf:type owl:Class ;
+           
+           rdfs:subClassOf :ItemClass .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#WordLevelConstruction
+
+:WordLevelConstruction rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :NonAtomicConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#WordLevelConstructionWithGrammaticalMorpheme
+
+:WordLevelConstructionWithGrammaticalMorpheme rdf:type owl:Class ;
+                                              
+                                              rdfs:subClassOf :WordLevelConstruction .
+
+
+
+###  http://galoes.org/ontologies/occult.owl#WordLevelConstructionWithoutGrammaticalMorpheme
+
+:WordLevelConstructionWithoutGrammaticalMorpheme rdf:type owl:Class ;
+                                                 
+                                                 rdfs:subClassOf :WordLevelConstruction .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+
