@@ -78,6 +78,14 @@
     
 
 
+    <!-- http://galoes.org/ontologies/occult.owl#AbsoluteTimeSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#AbsoluteTimeSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ExternalTemporalConstitutionSeme"/>
+    </owl:Class>
+    
+
+
     <!-- http://galoes.org/ontologies/occult.owl#AbundantDegreeModificationSeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#AbundantDegreeModificationSeme">
@@ -146,22 +154,6 @@
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#AffirmationSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#PropositionalContentPolaritySeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#After_reference_point -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#After_reference_point">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#After_speech_act -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#After_speech_act">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
     </owl:Class>
     
 
@@ -279,22 +271,6 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#BUTCoordinationSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#CoordinationSeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#Before_reference_point -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Before_reference_point">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#Before_speech_act -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Before_speech_act">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
     </owl:Class>
     
 
@@ -471,6 +447,14 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#CorrelativeComparisonSituationSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#CorrelativeComparisonSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#CrastinalSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#CrastinalSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme"/>
     </owl:Class>
     
 
@@ -827,14 +811,6 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#Full_coincidence -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Full_coincidence">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
-    </owl:Class>
-    
-
-
     <!-- http://galoes.org/ontologies/occult.owl#GeneralDispositionSeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#GeneralDispositionSeme">
@@ -899,6 +875,14 @@ really nice</rdfs:comment>
     
 
 
+    <!-- http://galoes.org/ontologies/occult.owl#HesternalPastSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#HesternalPastSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RecentPastSeme"/>
+    </owl:Class>
+    
+
+
     <!-- http://galoes.org/ontologies/occult.owl#HighProportionQuantitySeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#HighProportionQuantitySeme">
@@ -911,6 +895,22 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#HighRankOrderSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#IndefiniteOrderSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#HodiernalFutureSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#HodiernalFutureSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#HodiernalPastSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#HodiernalPastSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RecentPastSeme"/>
     </owl:Class>
     
 
@@ -951,6 +951,14 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#IllocutionSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#PragmaticsSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#ImminentFutureSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ImminentFutureSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme"/>
     </owl:Class>
     
 
@@ -1601,22 +1609,6 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#Overlap -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Overlap">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#Partial_coincidence -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Partial_coincidence">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
-    </owl:Class>
-    
-
-
     <!-- http://galoes.org/ontologies/occult.owl#ParticipantEntityOrderSeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ParticipantEntityOrderSeme">
@@ -2081,14 +2073,6 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#Point_coincidence -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Point_coincidence">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground"/>
-    </owl:Class>
-    
-
-
     <!-- http://galoes.org/ontologies/occult.owl#PolarityModificationSemex -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#PolarityModificationSemex">
@@ -2522,6 +2506,14 @@ really nice</rdfs:comment>
     
 
 
+    <!-- http://galoes.org/ontologies/occult.owl#RecentPastSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RecentPastSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeBeforeSpeechActSeme"/>
+    </owl:Class>
+    
+
+
     <!-- http://galoes.org/ontologies/occult.owl#ReciprocalSeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ReciprocalSeme">
@@ -2583,6 +2575,183 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ReinforcementSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#MitigationOrReinforcementSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeFullCoincidenceFigureGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeFullCoincidenceFigureGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeOverlapFigureGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeOverlapFigureGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimePartialCoincidenceFigureGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimePartialCoincidenceFigureGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimePointCoincidenceFigureGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimePointCoincidenceFigureGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ExternalTemporalConstitutionSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithExplicitGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithExplicitGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureFollowingExplicitGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureFollowingExplicitGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigurePrecedingExplicitGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigurePrecedingExplicitGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureSimultaneousToGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithGroundInitialBoundarySeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithGroundInitialBoundarySeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureFollowingExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithGroundTerminalBoundarySeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithGroundTerminalBoundarySeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigurePrecedingExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundAfterReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundAfterReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundBeforeReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundBeforeReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundImmediatelyBeforeReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundImmediatelyBeforeReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundBeforeReferencePointSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundJustAfterReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundJustAfterReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundAfterReferencePointSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundLongAfterReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundLongAfterReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundAfterReferencePointSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundLongBeforeReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundLongBeforeReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundBeforeReferencePointSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSimultaneaousToReferencePointSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSimultaneaousToReferencePointSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithImplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RelativeTimeWithUnboundedFigurePrecedingGroundSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RelativeTimeWithUnboundedFigurePrecedingGroundSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigureFollowingExplicitGroundSeme"/>
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#RelativeTimeWithFigurePrecedingExplicitGroundSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RemoteFutureSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RemoteFutureSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#RemotePastSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#RemotePastSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#TimeBeforeSpeechActSeme"/>
     </owl:Class>
     
 
@@ -2651,18 +2820,10 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#Simultaneous_to_reference_point -->
+    <!-- http://galoes.org/ontologies/occult.owl#SimultaneousToSpeechActSeme -->
 
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Simultaneous_to_reference_point">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#implicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#Simultaneous_to_speech_act -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#Simultaneous_to_speech_act">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#absolute_time"/>
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#SimultaneousToSpeechActSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#AbsoluteTimeSeme"/>
     </owl:Class>
     
 
@@ -3091,10 +3252,26 @@ really nice</rdfs:comment>
     
 
 
+    <!-- http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#TimeAfterSpeechActSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#AbsoluteTimeSeme"/>
+    </owl:Class>
+    
+
+
     <!-- http://galoes.org/ontologies/occult.owl#TimeAscriptionSeme -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#TimeAscriptionSeme">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ObjectOfAscriptionSeme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://galoes.org/ontologies/occult.owl#TimeBeforeSpeechActSeme -->
+
+    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#TimeBeforeSpeechActSeme">
+        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#AbsoluteTimeSeme"/>
     </owl:Class>
     
 
@@ -3269,30 +3446,6 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#absolute-relative_time -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absolute-relative_time">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ExternalTemporalConstitutionSeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#absolute_time -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#absolute_time">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ExternalTemporalConstitutionSeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#before_yesterday -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#before_yesterday">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
-    </owl:Class>
-    
-
-
     <!-- http://galoes.org/ontologies/occult.owl#deic -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#deic">
@@ -3313,126 +3466,6 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#dynamic">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#SpaceDynamicityScheme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#earlier_today -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#earlier_today">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#explicit_ground -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#explicit_ground">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#relative_time"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#figure_later_than_ground -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_later_than_ground">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#figure_simultaneous_to_ground">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#explicit_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#ground_is_initial_boundary -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ground_is_initial_boundary">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_later_than_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#ground_is_terminal_boundary -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#ground_is_terminal_boundary">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#imminent -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#imminent">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#implicit_ground -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#implicit_ground">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#relative_time"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#just_after -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#just_after">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_reference_point"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#just_before -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#just_before">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_reference_point"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#later_today -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#later_today">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_speech_act"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#long_after -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_after">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#After_reference_point"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#long_ago -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_ago">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#long_before -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#long_before">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_reference_point"/>
     </owl:Class>
     
 
@@ -3469,30 +3502,6 @@ really nice</rdfs:comment>
     
 
 
-    <!-- http://galoes.org/ontologies/occult.owl#recently -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#recently">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#relative_time -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#relative_time">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#ExternalTemporalConstitutionSeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#remote -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#remote">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
-    </owl:Class>
-    
-
-
     <!-- http://galoes.org/ontologies/occult.owl#stative -->
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#stative">
@@ -3505,31 +3514,6 @@ really nice</rdfs:comment>
 
     <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#statusassignmentsemex">
         <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#PropertyAscriptionSeme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#tomorrow -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#tomorrow">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#later_today"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#unbounded -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#unbounded">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_earlier_than_ground"/>
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#figure_later_than_ground"/>
-    </owl:Class>
-    
-
-
-    <!-- http://galoes.org/ontologies/occult.owl#yesterday -->
-
-    <owl:Class rdf:about="http://galoes.org/ontologies/occult.owl#yesterday">
-        <rdfs:subClassOf rdf:resource="http://galoes.org/ontologies/occult.owl#Before_speech_act"/>
     </owl:Class>
 </rdf:RDF>
 
